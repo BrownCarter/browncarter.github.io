@@ -1,0 +1,240 @@
+@import 'variables';
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: $direction;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  backgroung: $bg_hg_btn_grey;
+  height: 100%;
+}
+
+@media (max-width: 916px) {
+  .main {
+    margin: 12px;
+    margin-top: 100px;
+    @include flexCenter(column);
+    #{&}__sedans {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: $bright_orange;
+      height: 80vh;
+      width: 100%;
+      align-items: center;
+      padding: 50px;
+      .btn {
+        color: $bright_orange;
+      }
+      .btn:hover {
+        color: $bg_hg_btn_grey;
+      }
+
+      .main__sedans__svg {
+        background-image: url(../images/icon-sedans.svg);
+        height: 10vh;
+        background-repeat: no-repeat;
+        width: 10vh;
+      }
+    }
+
+    #{&}__suv {
+      background-color: $dark_cyan;
+      height: 80vh;
+      width: 100%;
+      padding: 50px;
+      align-items: center;
+      .btn {
+        color: $dark_cyan;
+      }
+      .btn:hover {
+        color: $bg_hg_btn_grey;
+      }
+
+      .main__suv__svg {
+        background-image: url(../images/icon-suvs.svg);
+        height: 10vh;
+        background-repeat: no-repeat;
+        width: 10vh;
+      }
+    }
+
+    #{&}__luxury {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      background-color: $very_dark_cyan;
+      height: 80vh;
+      width: 100%;
+      padding: 50px;
+      align-items: center;
+      .btn {
+        color: $very_dark_cyan;
+      }
+
+      .btn:hover {
+        color: $bg_hg_btn_grey;
+      }
+      .main__luxury__svg {
+        background-image: url(../images/icon-luxury.svg);
+        height: 10vh;
+        background-repeat: no-repeat;
+        width: 10vh;
+      }
+    }
+  }
+
+  h1 {
+    color: $bg_hg_btn_grey;
+    text-transform: uppercase;
+    font-weight: map-get($font_weights, bold);
+    font-family: 'Big Shoulders Display', cursive;
+  }
+
+  .btn {
+    display: block;
+    border: none;
+    height: 40px;
+    width: 40vw;
+    border-radius: 40px;
+    background-color: $bg_hg_btn_grey;
+    margin-top: 25vh;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+
+  .btn:hover {
+    border: 2px solid $bg_hg_btn_grey;
+    background-color: inherit;
+    color: white;
+  }
+
+  p {
+    margin-top: 30px;
+    color: $transparent_pg_white;
+    font-size: $font-size;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+}
+
+@media (min-width: 917px) {
+  .main {
+    margin: 120px;
+    @include flexCenter(row);
+    #{&}__sedans {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background-color: $bright_orange;
+      height: 80vh;
+      width: 60%;
+      align-items: center;
+      padding: 50px;
+      .btn {
+        color: $bright_orange;
+      }
+      .btn:hover {
+        color: $bg_hg_btn_grey;
+      }
+
+      .main__sedans__svg {
+        background-image: url(../images/icon-sedans.svg);
+        height: 10vh;
+        background-repeat: no-repeat;
+        width: 10vh;
+      }
+    }
+
+    #{&}__suv {
+      background-color: $dark_cyan;
+      height: 80vh;
+      width: 60%;
+      padding: 50px;
+      align-items: center;
+      .btn {
+        color: $dark_cyan;
+      }
+      .btn:hover {
+        color: $bg_hg_btn_grey;
+      }
+
+      .main__suv__svg {
+        background-image: url(../images/icon-suvs.svg);
+        height: 10vh;
+        background-repeat: no-repeat;
+        width: 10vh;
+      }
+    }
+
+    #{&}__luxury {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      background-color: $very_dark_cyan;
+      height: 80vh;
+      width: 60%;
+      padding: 50px;
+      align-items: center;
+      .btn {
+        color: $very_dark_cyan;
+      }
+
+      .btn:hover {
+        color: $bg_hg_btn_grey;
+      }
+      .main__luxury__svg {
+        background-image: url(../images/icon-luxury.svg);
+        height: 10vh;
+        background-repeat: no-repeat;
+        width: 10vh;
+      }
+    }
+  }
+
+  h1 {
+    color: $bg_hg_btn_grey;
+    text-transform: uppercase;
+    font-weight: map-get($font_weights, bold);
+    font-family: 'Big Shoulders Display', cursive;
+  }
+
+  .btn {
+    display: block;
+    border: none;
+    height: 40px;
+    width: 10vw;
+    border-radius: 40px;
+    background-color: $bg_hg_btn_grey;
+    margin-top: 25vh;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+
+  .btn:hover {
+    border: 2px solid $bg_hg_btn_grey;
+    background-color: inherit;
+    color: white;
+  }
+
+  p {
+    margin-top: 30px;
+    color: $transparent_pg_white;
+    font-size: $font-size;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+}
