@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: url(../images/bg-pattern-bottom.svg) top left/100% no-repeat, url(../images/bg-pattern-top.svg) bottom right/100% no-repeat;
+  background-color: #19a2ae;
+}
+.main .main__second {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 10%;
+  height: 60vh;
+  width: 25vw;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.main__top__bg {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main__mid__img {
+  background-image: url(../images/image-victor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  bottom: 60px;
+  padding: 20%;
+}
+
+span {
+  display: inline-block;
+}
+
+.main__name {
+  border-bottom: 1px solid #969696;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+.main__name span {
+  font-weight: 400;
+  color: #969696;
+  font-size: 15px;
+}
+
+.main__stats {
+  width: 100%;
+  height: 30vh;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #fff;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10%;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.stats div {
+  width: 22%;
+  font-size: 18px;
+  font-weight: 700;
+}
+.stats div span {
+  color: #969696;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */
