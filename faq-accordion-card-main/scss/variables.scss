@@ -1,0 +1,27 @@
+//Txt
+$desaturated-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+
+//Background gradient
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+
+  //Neutral
+//Text
+$very-grayish-blue: hsl(237, 12%, 33%);
+$garyish-blue: hsl(240, 6%, 50%);
+
+//Dividers
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+//Font
+@function rem($pixel) {
+  @return ($pixel/16) * 1rem;
+}
+
+$font-weight: (
+  'regular': 400,
+  'bold': 700,
+);
+
+$font-size: rem(12);

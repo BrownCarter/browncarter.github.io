@@ -1,0 +1,107 @@
+@import 'colors';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $main-bg;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.main__container {
+  flex-direction: column;
+  width: 340px;
+  height: 510px;
+  border-radius: 15px;
+  background-color: $card-bg;
+  transform: translateY(20%);
+}
+
+.image__cube {
+  background-image: url(../images/image-equilibrium.jpg);
+  height: 60%;
+  width: 80%;
+  background-size: cover;
+  align-content: center;
+  justify-content: center;
+  border-radius: 15px;
+  transform: translateX(30px) translateY(10px);
+  &:hover {
+    background-color: $cyan;
+    background-blend-mode: multiply;
+  }
+}
+
+h3,
+p {
+  margin-top: 15px;
+  width: 90%;
+  margin-left: 30px;
+  font-family: 'Outfit', sans-serif;
+}
+
+h3 {
+  color: $white;
+  &:hover {
+    color: $cyan;
+  }
+}
+
+p {
+  color: $soft-blue;
+}
+
+.details {
+  border-bottom: 2px solid $line;
+  padding-bottom: 10px;
+  width: 80%;
+  vertical-align: middle;
+}
+
+.sp__1 {
+  color: $cyan;
+}
+
+.sp__2 {
+  margin-left: 110px;
+}
+
+.sp__1 img,
+.sp__2 img {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+
+.creator {
+  width: 80%;
+}
+
+.creator img {
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.sp__3 {
+  color: $white;
+  &:hover {
+    color: $cyan;
+  }
+}

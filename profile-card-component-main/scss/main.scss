@@ -1,0 +1,108 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+@mixin flexBox($direction, $justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.main {
+  @include flexBox(row, center, center);
+  background: url(../images/bg-pattern-bottom.svg) top left/100% no-repeat,
+    url(../images/bg-pattern-top.svg) bottom right/100% no-repeat;
+  background-color: $dark__cyan;
+  #{&}__second {
+    @include flexBox(column, flex-start, center);
+    margin: 10%;
+    height: 60vh;
+    width: 25vw;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
+
+.main__top__bg {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main__mid__img {
+  background-image: url(../images/image-victor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  bottom: 60px;
+  padding: 20%;
+}
+
+span {
+  display: inline-block;
+}
+
+.main__name {
+  border-bottom: 1px solid $dark__grey;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  font-weight: map-get($font__weight, bold);
+  padding-bottom: 25px;
+  background-color: #fff;
+  span {
+    font-weight: map-get($font__weight, regular);
+    color: $dark__grey;
+    font-size: 15px;
+  }
+}
+
+.main__stats {
+  width: 100%;
+  height: 30vh;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #fff;
+}
+
+.stats {
+  @include flexBox(row, center, center);
+  margin-top: 10%;
+  flex-wrap: wrap;
+  align-content: space-around;
+  div {
+    width: 22%;
+    font-size: 18px;
+    font-weight: map-get($font__weight, bold);
+    span {
+      color: $dark__grey;
+      font-size: 15px;
+      font-weight: map-get($font__weight, regular);
+    }
+  }
+}

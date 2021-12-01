@@ -1,0 +1,112 @@
+@import 'breakpoints';
+@import 'variables';
+:root {
+  @import 'variables';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+@mixin flexBox($direction) {
+  display: flex;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+.container {
+  @include flexBox(row);
+  align-content: center;
+  width: 100%;
+  background-image: linear-gradient($soft-violet, $soft-blue);
+  z-index: 2;
+}
+
+.main {
+  border-radius: 10px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  margin: 150px;
+  z-index: 60;
+  background-color: #fff;
+}
+
+.img__box {
+  background-image: url(../images/illustration-woman-online-desktop.svg);
+  width: 70vw;
+  padding-left: 20px;
+  flex-basis: 70%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  box-shadow: beige;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+  right: 150px;
+  z-index: -1;
+}
+
+.small__box {
+  background-image: url(../images/illustration-box-desktop.svg);
+  width: 160px;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  height: 160px;
+  position: relative;
+  top: 170px;
+  right: 50px;
+  z-index: 1;
+}
+
+.main__accordion {
+  flex-basis: 50%;
+  margin-top: 40px;
+  width: 40vw;
+  padding-left: 0;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  background-color: #fff;
+}
+
+p {
+  display: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.box__detail {
+  border-bottom: 2px solid $light-grayish-blue;
+}
+
+.s__img {
+  background-image: url(../images/icon-arrow-down.svg);
+  background-size: 10px;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
