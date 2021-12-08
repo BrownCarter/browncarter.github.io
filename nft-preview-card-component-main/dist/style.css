@@ -45,6 +45,22 @@ body {
   background-blend-mode: multiply;
 }
 
+.image__eye {
+  display: hidden;
+  width: 15%;
+  height: 10%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  transform: translateX(155px) translateY(-170px);
+  z-index: 1;
+}
+.image__eye:hover {
+  display: block;
+  background-image: url(../images/icon-view.svg);
+  background-blend-mode: multiply;
+}
+
 h3,
 p {
   margin-top: 15px;
@@ -54,6 +70,7 @@ p {
 }
 
 h3 {
+  margin-top: -25px;
   color: white;
 }
 h3:hover {
