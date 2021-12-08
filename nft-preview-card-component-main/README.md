@@ -8,7 +8,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
 
@@ -29,10 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Solution URL: [Add solution URL here](https://github.com/BrownCarter/browncarter.github.io/tree/main/nft-preview-card-component-main)
+- Live Site URL: [Add live site URL here](https://browncarter.github.io/nft-preview-card-component-main/)
 
 ### Built with
 
@@ -44,4 +41,4 @@ Users should be able to:
 ## Author
 
 - Website - [Add your name here](Brown Carter)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/BrownCarter)
