@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/BrownCarter/browncarter.github.io/tree/main/nft-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://browncarter.github.io/nft-preview-card-component-main/)
+- Solution URL: [Solution URL](https://github.com/BrownCarter/browncarter.github.io/tree/main/nft-preview-card-component-main)
+- Live Site URL: [Live site ](https://browncarter.github.io/nft-preview-card-component-main/)
 
 ### Built with
 
@@ -41,4 +41,4 @@ Users should be able to:
 ## Author
 
 - Website - [Add your name here](Brown Carter)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/BrownCarter)
+- Frontend Mentor - [@BrownCarter](https://www.frontendmentor.io/profile/BrownCarter)
