@@ -1,0 +1,141 @@
+/**
+*
+* Testing
+*
+**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+@media (max-width: 360px) {
+  .attribution {
+    visibility: hidden;
+  }
+
+  .calc__main__body {
+    margin: 0;
+    width: 100%;
+    background-color: #c5e4e7;
+    height: 121vh;
+  }
+
+  .calc__body {
+    transform: translateY(25%);
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+  }
+
+  .calc__pg {
+    color: #00494d;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .calc__pg .error {
+    padding: 0;
+    color: red !important;
+    font-size: 0.8rem;
+  }
+
+  .calc__screen {
+    width: 100%;
+    height: 30px;
+    background-color: #f4fafa;
+    font-weight: bolder;
+  }
+  .calc__screen input {
+    text-align: right;
+    -webkit-text-decoration: solid;
+            text-decoration: solid;
+    font-size: 1.5rem;
+  }
+  .calc__screen .bill {
+    width: 100%;
+    height: 30px;
+    background-color: #c5e4e7;
+    border: none;
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position-y: 8px;
+    background-position-x: 1px;
+  }
+  .calc__screen .people {
+    width: 100%;
+    height: 30px;
+    background-color: #c5e4e7;
+    border: none;
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position-y: 8px;
+    background-position-x: 1px;
+  }
+
+  .calc__tip__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .calc__btn {
+    background-color: #00494d;
+    height: 35px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .calc__result__box {
+    transform: translateY(20px);
+    background-color: #00494d;
+    border-radius: 5px;
+    height: 180px;
+    padding: 10px;
+  }
+
+  .button {
+    width: 80%;
+    margin-left: 30px;
+    border-radius: 5px;
+    height: 30px;
+    transform: translateY(20px);
+    border: none;
+    background-color: #26c0ab;
+  }
+
+  .tip,
+.total {
+    margin-top: 8px;
+    color: white;
+  }
+  .tip span,
+.total span {
+    color: #5e7a7d;
+  }
+
+  .calc__tip__result,
+.calc__total__result {
+    float: right;
+    font-size: 1.5rem;
+    color: #26c0ab !important;
+    text-align: center;
+    transform: translateY(-10px);
+    font-weight: bold !important;
+  }
+}/*# sourceMappingURL=main.css.map */
