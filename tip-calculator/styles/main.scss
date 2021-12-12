@@ -16,12 +16,9 @@
   box-sizing: inherit;
 }
 
-@include media(">=phone", "<tablet") {
+@include media(">=320px", "<tablet") {
   .attribution {
     visibility: hidden;
-    @include media(">phone") {
-      visibility: hidden;
-    }
   }
   .calc__main__body {
     margin: 0;
