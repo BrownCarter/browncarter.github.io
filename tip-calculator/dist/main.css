@@ -18,18 +18,25 @@
   box-sizing: inherit;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 360px) and (max-width: 767px) {
   .attribution {
     visibility: hidden;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) and (min-width: 361px) {
+  .attribution {
+    visibility: hidden;
+  }
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .calc__main__body {
     margin: 0;
     width: 100%;
     background-color: #c5e4e7;
     height: 121vh;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .calc__body {
     transform: translateY(25%);
     width: 100%;
@@ -38,7 +45,8 @@
     background-color: white;
     padding: 15px;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .calc__pg {
     color: #00494d;
     margin-top: 15px;
@@ -50,7 +58,8 @@
     color: red !important;
     font-size: 0.8rem;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .calc__screen {
     width: 100%;
     height: 30px;
@@ -83,13 +92,15 @@
     background-position-y: 8px;
     background-position-x: 1px;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .calc__tip__main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .calc__btn {
     background-color: #00494d;
     height: 35px;
@@ -100,7 +111,8 @@
     cursor: pointer;
     font-weight: bold;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .calc__result__box {
     transform: translateY(20px);
     background-color: #00494d;
@@ -108,7 +120,8 @@
     height: 180px;
     padding: 10px;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .button {
     width: 80%;
     margin-left: 30px;
@@ -118,7 +131,8 @@
     border: none;
     background-color: #26c0ab;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .tip,
 .total {
     margin-top: 8px;
@@ -128,7 +142,8 @@
 .total span {
     color: #5e7a7d;
   }
-
+}
+@media (min-width: 360px) and (max-width: 767px) {
   .calc__tip__result,
 .calc__total__result {
     float: right;
