@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="dist/main.css">
-  <title>Frontend Mentor | Tip calculator app</title>
-  <script defer src="js/script.js"></script>
-
-</head>
-<body>
-  <div class="calc__main__body">
-    <div class="calc__body">
-      <p class="calc__pg">Bill</p>
-      <div class="calc__screen">
-        <input type="text" name="text" id="text" class="bill">
-      </div>
-      <p class="calc__pg">Select Tip %</p>
-      <div class="calc__tip__main">
-        <div class="calc__btn" id="five">5%</div>
-        <div class="calc__btn" id="ten">10%</div>
-        <div class="calc__btn" id="fifteen">15%</div>
-        <div class="calc__btn" id="twenty5">25%</div>
-        <div class="calc__btn" id="fifty">50%</div>
-        <div class="calc__btn" id="custom">Custom</div>
-      </div>
-
-      <p class="calc__pg">Number of People <span class="error"></span></p>
-      
-      <div class="calc__screen">
-        <input type="text" name="text" id="text" class="people">
-      </div>
-
-      <div class="calc__result__box">
-        <div class="calc__tip">
-          <p class="tip">Tip Amount <br> <span>/ person</span><span class="calc__tip__result"></span>   </p>              
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/main.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="calc__main__body">
+      <div class="calc__body">
+        <p class="calc__pg">Bill</p>
+        <div class="calc__screen">
+          <input type="number" name="bill" id="text" class="bill" />
         </div>
-        <div class="calc__total">
-            <p class="total">Total <br> <span>/ person</span> <span class="calc__total__result"></span></p>   
+        <p class="calc__pg">Select Tip %</p>
+        <div class="calc__tip__main">
+          <div class="calc__btn" id="five">5%</div>
+          <div class="calc__btn" id="ten">10%</div>
+          <div class="calc__btn" id="fifteen">15%</div>
+          <div class="calc__btn" id="twenty5">25%</div>
+          <div class="calc__btn" id="fifty">50%</div>
+          <input
+            type="text"
+            name="custom"
+            class="calc__btn"
+            id="custom"
+            value="Custom"
+          />
         </div>
-        <button class="button" id="button">Reset</button>
-      </div>
 
+        <p class="calc__pg">Number of People <span class="error"></span></p>
+
+        <div class="calc__screen">
+          <input type="number" name="tip" id="text" class="people" />
+        </div>
+
+        <div class="calc__result__box">
+          <div class="calc__tip">
+            <p class="tip">
+              Tip Amount <br />
+              <span>/ person</span><span class="calc__tip__result"></span>
+            </p>
+          </div>
+          <div class="calc__total">
+            <p class="total">
+              Total <br />
+              <span>/ person</span> <span class="calc__total__result"></span>
+            </p>
+          </div>
+          <button class="button" id="button">Reset</button>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
