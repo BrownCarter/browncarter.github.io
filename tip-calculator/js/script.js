@@ -1,4 +1,5 @@
-let calValue = [];
+let calValue = [0];
+calValue.fill(0, 1, 10);
 
 function emptyAll() {
   document.querySelector('.button').addEventListener('click', () => {
