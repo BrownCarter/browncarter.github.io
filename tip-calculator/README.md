@@ -40,7 +40,7 @@ Users should be able to:
 ### What I learned
 
 -Javascript events for keypress
-```html
+
 ## Author
 
 - Website - [tip-calculator](https://browncarter.github.io/tip-calculator/)
