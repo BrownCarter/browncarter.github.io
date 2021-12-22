@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/BrownCarter/browncarter.github.io/tree/main/tip-calculator](https://your-solution-url.com)
-- Live Site URL: [https://browncarter.github.io/tip-calculator/](https://your-live-site-url.com)
+- Solution URL: [tip-calculator](https://github.com/BrownCarter/browncarter.github.io/tree/main/tip-calculator)
+- Live Site URL: [live-site](https://browncarter.github.io/tip-calculator/)
 
 ### Built with
 
