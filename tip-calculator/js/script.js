@@ -1,4 +1,5 @@
-let stack = [];
+let calValue = [];
+
 function emptyAll() {
   document.querySelector('.button').addEventListener('click', () => {
     document
@@ -19,7 +20,7 @@ function calculateAll() {
       enter.preventDefault();
       console.log('enter press');
       let nums = parseInt(document.querySelector('#custom').value);
-      if (!isNaN(nums)) stack.push(nums);
+      if (!isNaN(nums)) calValue.push(nums);
       const bill = parseFloat(document.querySelector('.bill').value, 3);
       const people = parseInt(document.querySelector('.people').value);
       console.log(typeof nums);
@@ -28,8 +29,9 @@ function calculateAll() {
         document.querySelector('input#text.people').style.border =
           '2px solid red';
       } else {
-        console.log(stack);
-        const tip = stack.pop();
+        document.querySelector('.error').textContent = '';
+        console.log(calValue);
+        const tip = calValue.pop();
         console.log(tip);
         const tipAmount = ((tip / 100.0) * bill) / people;
         const total = bill / 5.0 + tipAmount;
@@ -49,23 +51,23 @@ function calculateAll() {
   });
 
   document.getElementById('five').addEventListener('click', () => {
-    stack.push(5);
+    calValue.push(5);
   });
 
   document.getElementById('ten').addEventListener('click', () => {
-    stack.push(10);
+    calValue.push(10);
   });
 
   document.getElementById('fifteen').addEventListener('click', () => {
-    stack.push(15);
+    calValue.push(15);
   });
 
   document.getElementById('twenty5').addEventListener('click', () => {
-    stack.push(25);
+    calValue.push(25);
   });
 
   document.getElementById('fifty').addEventListener('click', () => {
-    stack.push(50);
+    calValue.push(50);
   });
 
   document.getElementById('custom').addEventListener('click', () => {
