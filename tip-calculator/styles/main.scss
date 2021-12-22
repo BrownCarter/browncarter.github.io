@@ -181,10 +181,13 @@
       border: none;
       border-radius: 5px;
       margin-bottom: 20px;
+<<<<<<< HEAD
       &:focus {
         outline: none;
         border: 3px solid $Strong-cyan;
       }
+=======
+>>>>>>> c4cacd74f347d84227d705910162ef49d21e184d
     }
 
     input::-webkit-outer-spin-button,
@@ -254,10 +257,13 @@
       font-weight: 700;
       font-size: 1rem;
       border: none;
+<<<<<<< HEAD
       &:focus {
         border: 3px solid $Strong-cyan;
         text-align: right;
       }
+=======
+>>>>>>> c4cacd74f347d84227d705910162ef49d21e184d
     }
   }
   .calc__result__box {
@@ -288,10 +294,17 @@
     .calc__tip__result,
     .calc__total__result {
       float: right;
+<<<<<<< HEAD
       font-size: 2rem;
       color: $Strong-cyan !important;
       text-align: center;
       transform: translateY(-20px);
+=======
+      font-size: 1.5rem;
+      color: $Strong-cyan !important;
+      text-align: center;
+      transform: translateY(-10px);
+>>>>>>> c4cacd74f347d84227d705910162ef49d21e184d
       font-weight: bold !important;
     }
   }
@@ -300,6 +313,7 @@
     justify-content: center;
     margin-top: 80px;
   }
+<<<<<<< HEAD
 
   .error {
     padding: 0;
@@ -307,6 +321,8 @@
     font-size: 0.8rem;
     margin-left: 80px;
   }
+=======
+>>>>>>> c4cacd74f347d84227d705910162ef49d21e184d
 }
 
 @include media('>=tablet', '<desktop') {
@@ -337,10 +353,13 @@
       border: none;
       border-radius: 5px;
       margin-bottom: 20px;
+<<<<<<< HEAD
       &:focus {
         outline: none;
         border: 3px solid $Strong-cyan;
       }
+=======
+>>>>>>> c4cacd74f347d84227d705910162ef49d21e184d
     }
 
     input::-webkit-outer-spin-button,
@@ -403,7 +422,10 @@
         background-color: $Strong-cyan;
       }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c4cacd74f347d84227d705910162ef49d21e184d
     #custom {
       width: 100%;
       color: $Very-dark-cyan;
@@ -453,10 +475,13 @@
     justify-content: center;
     margin-top: 200px;
   }
+<<<<<<< HEAD
   .error {
     padding: 0;
     color: red !important;
     font-size: 0.8rem;
     margin-left: 40px;
   }
+=======
+>>>>>>> c4cacd74f347d84227d705910162ef49d21e184d
 }
